@@ -1,0 +1,9 @@
+<label [class.isRed]="labelIsRed"
+        [class]="objectClass"
+>Property Binding</label>
+<button (click)="changeLabelColor()">Change Color</button>
+<button (click)="toggleImageSize()">Toggle Image Size</button>
+<br/>
+<img [src]="puppyImagePath" 
+    [style.height.px]="imageHeight" 
+    [style.width.px]="imageWidth">

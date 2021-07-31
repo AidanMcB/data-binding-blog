@@ -1,0 +1,4 @@
+<p>event-binding-parent</p>
+<app-event-binding-child *ngFor="let item of todoItems"
+    [todoItem]="item" (deleteRequest)="deleteThis($event)"
+></app-event-binding-child>
